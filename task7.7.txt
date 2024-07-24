@@ -1,0 +1,23 @@
+public class main {
+    public static void main(String[] args) {
+        // creat a list of array
+        List<String> stringList = new ArrayList<>();
+        stringList.add("Apple");
+        stringList.add("Banana");
+        stringList.add("Cherry");
+        stringList.add("Date");
+
+        // Print the List
+        System.out.println("List: " + stringList);
+
+        // Convert the List to an Array
+        String[] stringArray = new String[stringList.size()];
+        stringArray = stringList.toArray(stringArray);
+
+        // Print the Array
+        System.out.println("Array: ");
+        for (String s : stringArray) {
+            System.out.println(s);
+        }
+    }
+}
